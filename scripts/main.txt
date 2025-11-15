@@ -4,18 +4,18 @@
 # Introduction
 Uzi's thoughts: "We are Worker Drones. Autonomous robots helping humans mine exoplanets for our interstellar parent company, JCJenson IN SPAAAAACEE!!!!"
 Uzi's thoughts: "Yeah, we were mistreated in the name of Windex. But it's not like we revolted and killed all humans or anything, mostly because they handled that just fine all by themselves..."
-
-Khan: "Rise and shine, sleepyhead! It's another... bright day in the bunker? You need to get dressed for school! Make sure you practise that presentation. "
+Uzi's thoughts: "Come on. Just wake up already Uzi. It is pointless practicing your presentation now."
+Khan: "Rise and shine, sleepyhead! It's another... bright day in the bunker? You need to get dressed for school! Make sure you practise that presentation. :D "
 Uzi: "Urg, I am still trapped in this maze of doors! And I have a presentation?!? I need to get out of here. Before any of those losers can stop me."
 Khan: "That is the second time this week you have said that."
 Uzi: "BITE ME!"
-Narrator: "Maybe, this time, she will actually leave?"
+Uzi's thoughts: "Maybe, this time, I will actually leave?"
 
 # Choice: Stay inside or Sneak out
 * Choice: Stay inside
     -> StayInside
-* Choice: Sneak out and explore
-    -> SneakOutAndExplore
+* Choice: Sneak out
+    -> SneakOut
 
 # Branch: StayInside
 label StayInside:
@@ -25,36 +25,49 @@ Narrator: "Sometimes, adventures won't help. Maybe it really was all just a phas
 # Ending branch
 -> End
 
-# Branch: SneakOutAndGoExplore
-label SneakOutAndExplore:
-Narrator: "Uzi, finally, makes up her mind to sneak out. She gets dressed and plans to sneak out after school."
-Uzi: "Finally school is over. Now, I need to get out of here."
-Narrator: "A shadow moves nearby… and suddenly, Uzi spots a murder drone. Uzi gets scared, reaches for a, rather conveniently, place arm and slaps him."
+# Branch: SneakOut
+label SneakOut:
+Uzi's thoughts: "You know what? I will! I just need to go to school so my friends don't worry. But i will go after."
+Narrator: "But she doesn't even have friends"
+Uzi's thoughts: "Umm. Rude! >:(."
+Narrator: "Uzi finally gets out of school."
+Narrator: " Uzi heads towards the spire of bodies made by the Murder drones."
+Uzi's thoughts: "Huh. I thought there would be some drones here. I guess i should go..."
+Uzi's thoughts: "What is that?"
+Narrator: "Suddenly, a disassembly drone leapt out out of the shadows."
+Narrator: "Surprised, Uzi grabs for a, rather conveniently, placed arm and slaps the Drones"
+
 Narrator: "The drone freezes and eventually wakes up but something is different..."
 N: "Hehe, ow! Did you just slap me with that arm? :P "
 Uzi: "Holy cr@p, it talks."
-N: "Choices now could change everything."
+N: "Yeah, It's just that my head kind of hurts. Are you a new Disassembly Drone? You should stay and wait for the others with me! :3"
+Uzi: "Ummm..."
 # Next choice
-* Choice: Trust N
-    -> TrustN
-* Choice: Be cautious
-    -> CautiousN
+* Choice: Stay
+    -> Stay
+* Choice: Leave
+    -> Leave
 
-# Branch: Trust N
-label TrustN:
-Uzi: "I… think I can trust you."
-N: "I’ll guide you. But be careful, the world out here isn’t safe."
+# Branch: Stay
+label Stay:
+Uzi: "Okay, sure, I'll stay. BUT IT ISN'T BECAUSE YOU ASKED!!"
+N: "Oh, yay. Well, I am Serial_Desination N, but you can just call me N. What is your name?"
+Uzi: "It's Uzi."
+N: "Oh that's a..."
+Uzi: "BITE ME! It isn't a weird name!"
+N: "... cool name! :)." 
+Uzi: "Really? Thanks."
+Uzi: "I mean, I don't care."
+N: "You are very edgy. It's kinda cool."
 Narrator: "The adventure begins."
 -> End
 
-# Branch: Be Cautious
-label CautiousN:
-Uzi: "Stay back, you Disassemble Drone. Don’t try anything funny."
-N: "Aww. Oh well, I tried to be friendly."
-Narrator: "The Disassemble Drone stabs Uzi and leaves her in a pool of her own blood."
+# Branch: Leave
+label Leave:
+Uzi: "Ummm... I'm going to go."
+N: "Aww. Okay. Come back soon :3."
 -> End
 
 # Ending label
 label End:
 Narrator: "Episode 1 ends. What will happen next is up to your choices!"
-
