@@ -1,1 +1,54 @@
+# Murder Drones VN - Episode 1
+# Scene: Uzi's Room
+
+# Introduction
+Narrator: "Another quiet morning in the hive. The hum of machinery is oddly comforting… but Uzi feels restless."
+
+Uzi: "…Maybe today’s the day I actually do something different."
+
+# Choice: Stay inside or go outside
+* Choice: Stay inside
+    -> StayInside
+* Choice: Go outside
+    -> GoOutside
+
+# Branch: StayInside
+label StayInside:
+Narrator: "Uzi decides to stay in her room, continuing the usual routines. Life goes on as normal, and nothing really changes."
+Uzi: "…I guess it really was just a phase."
+Narrator: "Sometimes, the world keeps spinning even when nothing happens."
+# Ending branch
+-> End
+
+# Branch: GoOutside
+label GoOutside:
+Narrator: "Curiosity wins. Uzi steps outside into the unfamiliar territory of the outer hive."
+Uzi: "Wow… it’s bigger than I remember."
+Narrator: "A shadow moves nearby… and suddenly, Uzi spots a new drone."
+N: "Hello… I’m N."
+Uzi: "Who… are you? Are you… friendly?"
+Narrator: "Choices now could change everything."
+# Next choice
+* Choice: Trust N
+    -> TrustN
+* Choice: Be cautious
+    -> CautiousN
+
+# Branch: Trust N
+label TrustN:
+Uzi: "I… think I can trust you."
+N: "I’ll guide you. But be careful, the world out here isn’t safe."
+Narrator: "The adventure begins."
+-> End
+
+# Branch: Be Cautious
+label CautiousN:
+Uzi: "I’ll stay alert. Don’t try anything funny."
+N: "Fair enough… but you might miss out if you don’t take risks."
+Narrator: "The choices ahead will shape what comes next."
+-> End
+
+# Ending label
+label End:
+Narrator: "Episode 1 ends. What will happen next is up to your choices!"
 
