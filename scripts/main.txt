@@ -2,32 +2,38 @@
 # Scene: Uzi's Room
 
 # Introduction
-Narrator: "Another quiet morning in the hive. The hum of machinery is oddly comforting… but Uzi feels restless."
+Uzi's thoughts: "We are Worker Drones. Autonomous robots helping humans mine exoplanets for our interstellar parent company, JCJenson IN SPAAAAACEE!!!!"
+Uzi's thoughts: "Yeah, we were mistreated in the name of Windex. But it's not like we revolted and killed all humans or anything, mostly because they handled that just fine all by themselves..."
 
-Uzi: "…Maybe today’s the day I actually do something different."
+Khan: "Rise and shine, sleepyhead! It's another... bright day in the bunker? You need to get dressed for school! Make sure you practise that presentation. "
+Uzi: "Urg, I am still trapped in this maze of doors! And I have a presentation?!? I need to get out of here. Before any of those losers can stop me."
+Khan: "That is the second time this week you have said that."
+Uzi: "BITE ME!"
+Narrator: "Maybe, this time, she will actually leave?"
 
-# Choice: Stay inside or go outside
+# Choice: Stay inside or Sneak out
 * Choice: Stay inside
     -> StayInside
-* Choice: Go outside
-    -> GoOutside
+* Choice: Sneak out and explore
+    -> SneakOutAndExplore
 
 # Branch: StayInside
 label StayInside:
-Narrator: "Uzi decides to stay in her room, continuing the usual routines. Life goes on as normal, and nothing really changes."
+Narrator: "Uzi decides to get dressed for school and continues her routines. Life goes on as normal, and Uzi grows into a responsible and respectful adult."
 Uzi: "…I guess it really was just a phase."
-Narrator: "Sometimes, the world keeps spinning even when nothing happens."
+Narrator: "Sometimes, adventures won't help. Maybe it really was all just a phase."
 # Ending branch
 -> End
 
-# Branch: GoOutside
-label GoOutside:
-Narrator: "Curiosity wins. Uzi steps outside into the unfamiliar territory of the outer hive."
-Uzi: "Wow… it’s bigger than I remember."
-Narrator: "A shadow moves nearby… and suddenly, Uzi spots a new drone."
-N: "Hello… I’m N."
-Uzi: "Who… are you? Are you… friendly?"
-Narrator: "Choices now could change everything."
+# Branch: SneakOutAndGoExplore
+label SneakOutAndExplore:
+Narrator: "Uzi, finally, makes up her mind to sneak out. She gets dressed and plans to sneak out after school."
+Uzi: "Finally school is over. Now, I need to get out of here."
+Narrator: "A shadow moves nearby… and suddenly, Uzi spots a murder drone. Uzi gets scared, reaches for a, rather conveniently, place arm and slaps him."
+Narrator: "The drone freezes and eventually wakes up but something is different..."
+N: "Hehe, ow! Did you just slap me with that arm? :P "
+Uzi: "Holy cr@p, it talks."
+N: "Choices now could change everything."
 # Next choice
 * Choice: Trust N
     -> TrustN
@@ -43,9 +49,9 @@ Narrator: "The adventure begins."
 
 # Branch: Be Cautious
 label CautiousN:
-Uzi: "I’ll stay alert. Don’t try anything funny."
-N: "Fair enough… but you might miss out if you don’t take risks."
-Narrator: "The choices ahead will shape what comes next."
+Uzi: "Stay back, you Disassemble Drone. Don’t try anything funny."
+N: "Aww. Oh well, I tried to be friendly."
+Narrator: "The Disassemble Drone stabs Uzi and leaves her in a pool of her own blood."
 -> End
 
 # Ending label
